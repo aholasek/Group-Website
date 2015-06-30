@@ -37,8 +37,35 @@ function rockPick () {
 
 function compare(choice1, choice2) {
 	if (choice1 === choice2) {
-		alert("You've tied with the computer!")
+		alert("You've tied with the computer!");
 	}
+	else if (choice1 === "rock") {
+		if (choice2 === "scissors") {
+			alert("You've Won!");
+		}
+		else {
+			alert("You've lost to the computer!");
+		}
+	}
+	else if (choice1 === "paper") {
+		if (choice2 === "rock") {
+			alert("You've Won!");
+		}
+		else {
+			alert("You've lost to the computer!");
+		}
+	}
+		else if (choice1 === "scissors") {
+		if (choice1 === "paper") {
+			alert("You've Won!");
+		}
+		else {
+			alert("You've lost to the computer!");
+		}
+	}
+};
+
+
 
 
 
