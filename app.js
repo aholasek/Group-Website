@@ -35,6 +35,10 @@ function rockPick () {
 
 
 
+function compare(choice1, choice2) {
+	if (choice1 === choice2) {
+		alert("You've tied with the computer!")
+	}
 
 
 
