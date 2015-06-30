@@ -2,7 +2,7 @@ var computerChoice = "";
 var userChoice = "";
 function computerThink(){
 	computerChoice = Math.floor(Math.random()*3);
-	if(computerChoice) === 1){
+	if(computerChoice === 1){
 	   computerChoice = "rock";
 	}
 	else if(computerChoice === 2){
@@ -11,19 +11,22 @@ function computerThink(){
 	else{
 		computerChoice = "scissors";
 	}
-};
+}
 
-function rockPick () {
+function rockPick() {
+	alert("test");
 	userChoice = "rock";
 	computerThink();
 	results();
-};
- function paperPick () {
+}
+
+ function paperPick() {
  	userChoice = "paper";
  	computerThink();
  	results();
- };
- function scissorsPick () {
+ }
+
+ function scissorsPick() {
  	userChoice = "scissors";
  	computerThink();
  	results();
@@ -80,7 +83,7 @@ function compare(choice1, choice2) {
  	alert("You choose" + userChoice);
  	alert("The Computer chooses" + computerChoice);
  	compare(userChoice, computerChoice);
- };
+ }
 
  function compare(choice1, choice2) {
  	if (choice1 === "rock") {
