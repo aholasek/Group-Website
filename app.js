@@ -1,5 +1,5 @@
-var
-
+var computerChoice = "";
+var userChoice = "";
 function computerThink(){
 	computerChoice = Math.floor(Math.random()*3);
 	if(computerChoice) === 1){
@@ -11,6 +11,12 @@ function computerThink(){
 	else{
 		computerChoice = "scissors";
 	}
+};
+
+function rockPick () {
+	userChoice = "rock";
+	computerThink();
+	results();
 };
 
 
@@ -36,6 +42,8 @@ function computerThink(){
  };
 
  function compare(choice1, choice2) {
+ 	if (choice1 === "rock") {
+
 
 
 
