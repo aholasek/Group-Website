@@ -23,6 +23,7 @@ function rockPick () {
  	computerThink();
  	results();
  };
+ function scissorsPick () {}
 
 
 
