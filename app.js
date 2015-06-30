@@ -18,6 +18,11 @@ function rockPick () {
 	computerThink();
 	results();
 };
+ function paperPick () {
+ 	userChoice = "paper";
+ 	computerThink();
+ 	results();
+ };
 
 
 
