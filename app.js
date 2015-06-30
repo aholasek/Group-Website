@@ -32,6 +32,10 @@ function computerThink(){
  function results() {
  	alert("You choose" + userChoice);
  	alert("The Computer chooses" + computerChoice);
+ 	compare(userChoice, computerChoice);
+ };
+
+ function compare(choice1, choice2) {
 
 
 
