@@ -15,7 +15,6 @@ function computerThink(){
 }
 
 var rockPick = function(){
-	alert("test");
 	userChoice = "rock";
 	computerThink();
 	results();
@@ -70,8 +69,7 @@ function compare(choice1, choice2) {
 }
 
  function results() {
- 	alert("You choose" + userChoice);
- 	alert("The Computer chooses" + computerChoice);
+ 	alert("You've chosen " + userChoice + " and the Computer has choosen " + computerChoice);
  	compare(userChoice, computerChoice);
  }
 
