@@ -60,23 +60,23 @@ function compare(choice1, choice2) {
 			userscore++;	
 		}
 		else {
-
+			computerscore++;
 		}
 	}
 	else if (choice1 === "paper") {
 		if (choice2 === "rock") {
-			alert("You've Won!");
+			userscore++;
 		}
 		else {
-			alert("You've lost to the computer!");
+			computerscore++;
 		}
 	}
 		else if (choice1 === "scissors") {
 		if (choice1 === "paper") {
-			alert("You've Won!");
+			userscore++;
 		}
 		else {
-			alert("You've lost to the computer!");
+			computerscore++;
 		}
 	}
 }
@@ -90,20 +90,5 @@ function compare(choice1, choice2) {
 
 var userscore = 0;
 var computerscore = 0;
-
-	var looper = function () {
-
-
-	};
-		
-
-
-
-		}
-
-
-	};
-
-
 
 
