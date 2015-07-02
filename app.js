@@ -1,4 +1,16 @@
 
+ function results() {
+ 	var div = document.createElement('div');
+ 	compare(userscore,computerscore);
+div.textContent = "You've chosen " + userChoice + " and the Computer has choosen " + computerChoice + "The computer's score is " + computerscore + "and your score is " + userscore;
+
+
+div.setAttribute('class', 'note');
+document.body.appendChild(div);
+
+
+
+
 var computerChoice = "";
 var userChoice = "";
 function computerThink(){
@@ -40,14 +52,15 @@ var rockPick = function(){
 
 function compare(choice1, choice2) {
 	if (choice1 === choice2) {
-		alert("You've tied with the computer!");
+		alert("You tie");
+
 	}
 	else if (choice1 === "rock") {
 		if (choice2 === "scissors") {
-			alert("You've Won!");
+			userscore++;	
 		}
 		else {
-			alert("You've lost to the computer!");
+
 		}
 	}
 	else if (choice1 === "paper") {
@@ -68,11 +81,28 @@ function compare(choice1, choice2) {
 	}
 }
 
- function results() {
- 	alert("You've chosen " + userChoice + " and the Computer has choosen " + computerChoice);
- 	compare(userChoice, computerChoice);
+
+
+
+ 
  }
 
+
+var userscore = 0;
+var computerscore = 0;
+
+	var looper = function () {
+
+
+	};
+		
+
+
+
+		}
+
+
+	};
 
 
 
